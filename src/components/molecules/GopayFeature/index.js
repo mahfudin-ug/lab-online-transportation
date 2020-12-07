@@ -1,12 +1,12 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 
 const GopayFeature = (props) => {
   return (
-    <View style={{ flex: 1, alignItems: 'center'}}>
+    <TouchableOpacity onPress={props.onPress} style={{ flex: 1, alignItems: 'center'}}>
       <Image source={props.img} />
       <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', marginTop: 15}}>{props.title}</Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 export default GopayFeature
