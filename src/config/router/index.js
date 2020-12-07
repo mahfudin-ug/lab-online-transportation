@@ -7,7 +7,7 @@ const Stack = createStackNavigator()
 
 const HomeStack = () => {
   return (
-    <Stack.Navigator initialRouteName="ScanQRCode">
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Stack.Screen name="NewsDetail" component={NewsDetail} />
       <Stack.Screen name="ScanQRCode" component={ScanQRCode} options={{ headerShown: false }} />
